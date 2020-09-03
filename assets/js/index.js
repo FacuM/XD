@@ -20,7 +20,7 @@ $(document).ready(function () {
     $('#Dencoded').on('keyup keydown change', function () {
         $('#Ddecoded').val('');
 
-        let value = $(this).val();
+        let value = $(this).val().toUpperCase();
 
         if (value.includes('D') && value.includes('X')) {
             let accumulator = 1;
